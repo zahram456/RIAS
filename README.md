@@ -11,7 +11,7 @@ Desktop accounting system for Rehman Industries built with Python, Tkinter, and 
 - Automatic local database backups
 
 **Requirements**
-- Python 3.9+ (3.11 recommended)
+- Python 
 - Windows recommended for the packaged build
 
 **Quick Start**
