@@ -1,0 +1,42 @@
+﻿# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.dist-info/
+
+# Virtual envs
+.venv/
+venv/
+
+# Build/output
+build/
+dist/
+
+# Logs
+*.log
+
+# Databases & backups
+*.db
+*.sqlite
+*.sqlite3
+db_backups/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# PyInstaller
+*.spec
+
+# Installer outputs
+*.exe
+*.msi
+*.iss
+
+# PDFs (optional outputs)
+*.pdf
