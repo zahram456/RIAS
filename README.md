@@ -1,4 +1,6 @@
-﻿# Rehman Industries Accounting System (RIAS)
+# RIAS – Desktop Accounting System
+
+![GitHub stars](https://img.shields.io/github/stars/zahram456/RIAS)
 
 Desktop accounting system for Rehman Industries built with Python, Tkinter, and SQLite.
 
@@ -34,6 +36,19 @@ Desktop accounting system for Rehman Industries built with Python, Tkinter, and 
 - Build using the provided spec file:
   - `pyinstaller RIAS.spec`
 - Output is written to `dist/`.
+
+## 🛠 Installation
+1. Clone the repo  
+   `git clone https://github.com/zahram456/RIAS.git`
+
+2. Create virtual environment  
+   `python -m venv .venv`
+
+3. Activate and install  
+   `pip install -r requirements.txt`
+
+4. Run  
+   `python rehman_accounting.py`
 
 **Notes**
 - The app seeds a starter database if a bundled database is present.
