@@ -8,12 +8,12 @@ Desktop accounting system for Rehman Industries built with Python, Tkinter, and 
 - Chart of accounts with account types: Asset, Liability, Income, Expense
 - Voucher-based double-entry transactions (debit/credit validation)
 - Ledger and reporting views
-- CSV import/export utilities
+- CSV export utilities
 - PDF report generation (ReportLab)
 - Automatic local database backups
 
 **Requirements**
-- Python 
+- Python
 - Windows recommended for the packaged build
 
 **Quick Start**
