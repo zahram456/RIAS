@@ -1,55 +1,88 @@
-# RIAS – Desktop Accounting System
+# RIAS - Rehman Industries Accounting System
+
+Desktop accounting application for Rehman Industries, built with Python, Tkinter, and SQLite.
 
 ![GitHub stars](https://img.shields.io/github/stars/zahram456/RIAS)
 
-Desktop accounting system for Rehman Industries built with Python, Tkinter, and SQLite.
+## Overview
+RIAS is a voucher-driven double-entry accounting system for desktop use. It provides account management, voucher posting, reporting, export tools, database safety checks, and local backup support.
 
-**Features**
-- Chart of accounts with account types: Asset, Liability, Income, Expense
-- Voucher-based double-entry transactions (debit/credit validation)
-- Ledger and reporting views
-- CSV export utilities
-- PDF report generation (ReportLab)
+## Core Features
+- Chart of accounts (`Asset`, `Liability`, `Income`, `Expense`)
+- Voucher entry with debit/credit validation
+- Posting controls to prevent edits on posted vouchers
+- Voucher history with unbalanced voucher review tools
+- Financial reports:
+  - Trial Balance
+  - Profit and Loss
+  - Balance Sheet
+  - General Ledger
+  - Cash Flow
+- Export options:
+  - CSV export
+  - PDF export (ReportLab)
+  - Print-friendly PDF output
+- Startup integrity and data-quality checks
 - Automatic local database backups
+- Theme settings (runtime switch from Settings screen)
 
-**Requirements**
-- Python
-- Windows recommended for the packaged build
+## Requirements
+- Python 3.9+
+- Windows recommended (Tkinter desktop workflow)
+- Dependency:
+  - `reportlab>=3.6`
 
-**Quick Start**
-1. Create a virtual environment and install dependencies:
+## Installation
+1. Clone the repository:
+   - `git clone https://github.com/zahram456/RIAS.git`
+2. Enter the project directory:
+   - `cd RIAS`
+3. Create and activate a virtual environment:
    - `python -m venv .venv`
    - `.venv\Scripts\activate`
+4. Install dependencies:
    - `pip install -r requirements.txt`
-2. Run the app:
-   - `python rehman_accounting.py`
 
-**Data Location**
-- The database is stored under your home directory in `RIAS_Data`:
+## Run
+- Start the application:
+  - `python rehman_accounting.py`
+
+## Data Storage and Logs
+RIAS stores runtime data in your home directory under `RIAS_Data`:
+- Database:
   - `~/RIAS_Data/rehman_industries.db`
-- Backups are stored in:
+- Backups:
   - `~/RIAS_Data/db_backups/`
-- Logs are written to:
+- Log file:
   - `~/RIAS_Data/rias.log`
 
-**Build (PyInstaller)**
-- Build using the provided spec file:
+## Keyboard Shortcuts
+- Navigation:
+  - `Ctrl+1` Accounts
+  - `Ctrl+2` Voucher Entry
+  - `Ctrl+3` Reports
+  - `Ctrl+4` Voucher History
+  - `Ctrl+5` Settings
+- Voucher Entry:
+  - `Ctrl+L` Add line
+  - `Ctrl+S` Save voucher
+  - `Ctrl+N` New voucher
+- Reports:
+  - `Alt+T` Trial Balance
+  - `Alt+P` Profit and Loss
+  - `Alt+B` Balance Sheet
+  - `Alt+G` General Ledger
+  - `Alt+C` Cash Flow
+  - `Ctrl+E` Export CSV
+  - `Ctrl+Shift+E` Export PDF
+  - `Ctrl+P` Print
+
+## Build (PyInstaller)
+- Build from spec:
   - `pyinstaller RIAS.spec`
-- Output is written to `dist/`.
+- Output:
+  - `dist/`
 
-## 🛠 Installation
-1. Clone the repo  
-   `git clone https://github.com/zahram456/RIAS.git`
-
-2. Create virtual environment  
-   `python -m venv .venv`
-
-3. Activate and install  
-   `pip install -r requirements.txt`
-
-4. Run  
-   `python rehman_accounting.py`
-
-**Notes**
-- The app seeds a starter database if a bundled database is present.
-- PDF reports are generated with ReportLab.
+## Notes
+- If a bundled database exists and local data is missing, a starter database is seeded automatically.
+- Report PDFs are generated using ReportLab.
